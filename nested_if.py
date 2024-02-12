@@ -76,11 +76,11 @@
 # venue = "large hall" if int(attendees) > 100 else "gymnasium" if int(attendees) > 50 else "conference room" if int(attendees) > 20 else "classroom"
 # print(venue)
 
-# Task 3: Catering Choices
-# Ask the user if they want "vegetarian" food. Recommend "Veggie Delight Caterers" if yes, otherwise recommend "Gourmet Meals Caterers".
-food_selections = input("would you like vegetarian food ")
-veggieDelightCaterers = 'you should go to Veggie Delight Caterers' if food_selections == "yes" else 'you should go to Gourmet Meals Caterers'
-print(veggieDelightCaterers)
+# # Task 3: Catering Choices
+# # Ask the user if they want "vegetarian" food. Recommend "Veggie Delight Caterers" if yes, otherwise recommend "Gourmet Meals Caterers".
+# food_selections = input("would you like vegetarian food ")
+# veggieDelightCaterers = 'you should go to Veggie Delight Caterers' if food_selections == "yes" else 'you should go to Gourmet Meals Caterers'
+# print(veggieDelightCaterers)
 
 # 3. Silent Failures: The Error Handler 🐞
 # Objective:
