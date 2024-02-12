@@ -124,14 +124,34 @@
 # Buggy Code:
 
 # weather = input("Enter the weather: sunny, rainy, or cold: ")
-# clothing = "sunglasses" if weather = "sunny" else "umbrella" if weather = "rainy" else "sweater"
+# clothing = "sunglasses" if weather == "sunny" else "umbrella" if weather =="rainy" else "sweater"
 # print(clothing)
+
 # Task 2: Clothing Recommendation
 # Based on the corrected code from Task 1, further enhance the program to recommend additional items like "hat" or "boots" based on the weather.
-
+# weather = input("Enter the weather: sunny, rainy, or cold\n")
+# clothing = "sunglasses and a hat" if weather == "sunny" else "umbrella and rain boots" if weather == "rainy" else "sweater"
+# print(clothing)
 # Task 3: Accessory Recommendation
 # Based on the clothing recommendation, suggest an accessory. For instance, if "sunglasses" were recommended, suggest "sunscreen" as an accessory.
+weather = input("Enter the weather: sunny, rainy, cold ")
 
+if ( weather == 'sunny'):
+    clothing = 'wear sunglasses and a hat'
+    print(clothing)
+    if ('sunglasses' in clothing):
+        print('you should also wear sunscreen :p')
+elif ( weather == 'rainy'):
+    clothing = 'take an umbrella and wear rain boots'
+    print(clothing)
+    if ('umbrella' in clothing):
+        print("don't forget a pancho if you have one!")
+else:
+    clothing = 'wear a jacket or sweater'
+    print(clothing)
+    if ('sweater' in clothing):
+        print('I would also take gloves it may be chilly out')
+        
 # 5. The Silent Logger: System Monitor 🖥️
 # Objective:
 # To practice the use of the pass statement in a system monitoring context.
