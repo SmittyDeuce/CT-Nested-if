@@ -132,26 +132,27 @@
 # weather = input("Enter the weather: sunny, rainy, or cold\n")
 # clothing = "sunglasses and a hat" if weather == "sunny" else "umbrella and rain boots" if weather == "rainy" else "sweater"
 # print(clothing)
+
 # Task 3: Accessory Recommendation
 # Based on the clothing recommendation, suggest an accessory. For instance, if "sunglasses" were recommended, suggest "sunscreen" as an accessory.
-weather = input("Enter the weather: sunny, rainy, cold ")
+# weather = input("Enter the weather: sunny, rainy, cold ")
 
-if ( weather == 'sunny'):
-    clothing = 'wear sunglasses and a hat'
-    print(clothing)
-    if ('sunglasses' in clothing):
-        print('you should also wear sunscreen :p')
-elif ( weather == 'rainy'):
-    clothing = 'take an umbrella and wear rain boots'
-    print(clothing)
-    if ('umbrella' in clothing):
-        print("don't forget a pancho if you have one!")
-else:
-    clothing = 'wear a jacket or sweater'
-    print(clothing)
-    if ('sweater' in clothing):
-        print('I would also take gloves it may be chilly out')
-        
+# if ( weather == 'sunny'):
+#     clothing = 'wear sunglasses and a hat'
+#     print(clothing)
+#     if ('sunglasses' in clothing):
+#         print('you should also wear sunscreen :p')
+# elif ( weather == 'rainy'):
+#     clothing = 'take an umbrella and wear rain boots'
+#     print(clothing)
+#     if ('umbrella' in clothing):
+#         print("don't forget a pancho if you have one!")
+# else:
+#     clothing = 'wear a jacket or sweater'
+#     print(clothing)
+#     if ('sweater' in clothing):
+#         print('I would also take gloves it may be chilly out')
+
 # 5. The Silent Logger: System Monitor 🖥️
 # Objective:
 # To practice the use of the pass statement in a system monitoring context.
@@ -161,15 +162,58 @@ else:
 
 # Buggy Code:
 
-# import random
+import random
 
 # cpu_usage = random.randint(0, 100)
 # if cpu_usage > 90:
 #     print("High CPU usage!")
-# elif cpu_usage > 80 and cpu_usage <= 90
+# elif cpu_usage > 80 and cpu_usage <= 90:
 #     pass
+        
 # Task 2: System Check
 # Based on the corrected code from Task 1, enhance the program to also monitor memory usage and disk space, and provide alerts accordingly.
+# cpu_usage = random.randint(0,100)
+# memory_usuage = random.randint(0,100)
+# disk_space = random.randint(0,100)
+
+# if cpu_usage > 90:
+#     print("High CPU usage!")
+# elif cpu_usage > 80 and cpu_usage <= 90:
+#     pass
+# if memory_usuage > 70:
+#     print("high memory usage")
+# else:
+#     pass
+# if disk_space > 80:
+#     print("warning low storage space")
+# else:
+#     pass
+
 
 # Task 3: Alert System
 # If any of the system parameters exceed a certain threshold, print an alert message. However, if the system parameter is within a "gray zone", use the pass statement to silently log this without alerting the user.
+cpu_usage = random.randint(0,100)
+memory_usuage = random.randint(0,100)
+disk_space = random.randint(0,100)
+
+cpu_threshold_danger = 90
+cpu_threshold = 80
+
+disk_space_threshold_danger = 80
+disk_space_threshold = 70
+
+memory_usuage_threshold_danger = 70
+memory_usuage_threshold = 60
+
+if cpu_usage > cpu_threshold_danger:
+    print(cpu_usage, "High CPU Usage!")
+elif cpu_usage > cpu_threshold_danger:
+    pass
+if disk_space > disk_space_threshold_danger:
+    print(disk_space, "Low storage!!")
+elif disk_space > disk_space_threshold:
+    pass
+if memory_usuage > memory_usuage_threshold:
+    print(memory_usuage, "high memory usage")
+else:
+    pass
