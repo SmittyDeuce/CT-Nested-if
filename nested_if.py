@@ -93,15 +93,28 @@
 
 # try:
 #     x = 1 / 0
-# except ZeroDivisionError
+# except ZeroDivisionError:
 #     pass
+
 # Task 2: Division Calculator
 # Based on the corrected code from Task 1, enhance the program to handle other potential errors, such as ValueError when trying to divide a number by a string.
+# try:
+#     x = 1 / 0
+# except ZeroDivisionError:
+#     pass
+# except ValueError:
+#     pass
 
-# Task 3: File Reader
-# Ask the user for a filename to read. Try to open and read the file. If the file doesn't exist, use the pass statement to handle the error silently.
+# # Task 3: File Reader
+# # Ask the user for a filename to read. Try to open and read the file. If the file doesn't exist, use the pass statement to handle the error silently.
+# file_name = input("Type a filename to open and read\n")
+# try:
+#     with open(file_name) as file:
+#         print(file.read())
+# except FileNotFoundError:
+#     pass
 
-# 4. Nested Quick Decisions: The Shopping Assistant 🛍️
+# 4 Nested Quick Decisions: The Shopping Assistant 🛍️
 # Objective:
 # To practice the use of nested shorthand if statements in assisting a shopping decision.
 

@@ -1,0 +1,1 @@
+testing open(*file name*) as  to see how it works
